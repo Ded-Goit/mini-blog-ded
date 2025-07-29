@@ -11,7 +11,8 @@
     "about": "About"
   },
   "posts": {
-    "title": "All Posts",
-    "view": "View Post"
+    "title": "Blog Posts",
+    "view": "View Post",
+    "back": "← Back to list"
   }
 }
