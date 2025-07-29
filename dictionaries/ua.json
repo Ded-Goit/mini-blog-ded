@@ -14,5 +14,12 @@
     "title": "Блог-пости",
     "view": "Переглянути",
     "back": "← Назад до списку"
+  },
+  "about": {
+    "title": "Про проєкт",
+    "description": "Цей міні-блог створено за допомогою Next.js App Router та JSONPlaceholder як мок-API.",
+    "authorIntro": "Розробник:",
+    "clientTitle": "Замовник",
+    "clientDescription": "Цей проєкт створено як додаткове завдання навчального курсу від"
   }
 }

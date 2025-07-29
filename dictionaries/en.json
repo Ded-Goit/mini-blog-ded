@@ -14,5 +14,12 @@
     "title": "Blog Posts",
     "view": "View Post",
     "back": "← Back to list"
+  },
+  "about": {
+    "title": "About This Project",
+    "description": "This mini-blog is built using Next.js App Router and JSONPlaceholder as a mock API.",
+    "authorIntro": "Developed by",
+    "clientTitle": "Client",
+    "clientDescription": "This project was created as an additional assignment for the training course from"
   }
 }
