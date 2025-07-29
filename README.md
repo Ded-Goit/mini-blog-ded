@@ -39,8 +39,8 @@ yaml
 
 ## 🙋‍♂️ About the Developer
 
-Developed by **Andrii Romanov (a.k.a. Дед Мазай)** — a passionate Fullstack Developer & Project Manager with 8+ years of experience.  
-Also a Tarot Reader with 20+ years of practice 🔮.
+Developed by **Andrii Romanov (a.k.a. DED)** - a passionate full-stack developer and project manager with over 20 years of experience.
+Also learning Data Analytics 🔮.
 
 ---
 
