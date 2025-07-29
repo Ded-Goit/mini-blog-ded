@@ -1,26 +1,36 @@
+//app/[lang]/page.tsx
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
-import Counter from "./components/counter";
-import LocaleSwitcher from "./components/locale-switcher";
 
-export default async function IndexPage(props: {
-  params: Promise<{ lang: Locale }>;
+type Post = {
+  id: number;
+  title: string;
+};
+
+export default async function HomePage({
+  params,
+}: {
+  params: { lang: Locale };
 }) {
-  const { lang } = await props.params;
-
+  const { lang } = params;
   const dictionary = await getDictionary(lang);
+
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const posts: Post[] = await res.json();
 
   return (
     <div>
-      <LocaleSwitcher />
-      <div>
-        <p>Current locale: {lang}</p>
-        <p>
-          This text is rendered on the server:{" "}
-          {dictionary["server-component"].welcome}
-        </p>
-        <Counter dictionary={dictionary.counter} />
-      </div>
+      <h1>{dictionary.posts.title}</h1>
+
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id} style={{ marginBottom: "1rem" }}>
+            <strong>{post.title}</strong>
+            <br />
+            <a href={`/${lang}/posts/${post.id}`}>{dictionary.posts.view}</a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

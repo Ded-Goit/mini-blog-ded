@@ -1,0 +1,17 @@
+{
+  "server-component": {
+    "welcome": "Vítejte"
+  },
+  "counter": {
+    "increment": "Přidat",
+    "decrement": "Ubrat"
+  },
+  "navigation": {
+    "home": "Головна",
+    "about": "Про нас"
+  },
+  "posts": {
+    "title": "Усі пости",
+    "view": "Переглянути"
+  }
+}

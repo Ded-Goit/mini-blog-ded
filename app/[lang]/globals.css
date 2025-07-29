@@ -1,0 +1,31 @@
+@import "normalize.css";
+
+/* Mobile-first base styles */
+:root {
+  --font-body: "Arial", sans-serif;
+  --color-text: #111;
+  --color-bg: #fff;
+  --color-accent: #0070f3;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1rem;
+}

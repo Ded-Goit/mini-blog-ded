@@ -5,5 +5,13 @@
   "counter": {
     "increment": "Increment",
     "decrement": "Decrement"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About"
+  },
+  "posts": {
+    "title": "All Posts",
+    "view": "View Post"
   }
 }

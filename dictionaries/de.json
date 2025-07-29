@@ -5,5 +5,9 @@
   "counter": {
     "increment": "Zuwachs",
     "decrement": "Dekrementieren"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About"
   }
 }
