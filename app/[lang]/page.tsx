@@ -1,18 +1,22 @@
 //app/[lang]/page.tsx
 import { getDictionary } from "../../get-dictionary";
-import { Locale } from "../../i18n-config";
+import { i18n, Locale } from "../../i18n-config";
+import Link from "next/link";
 
 type Post = {
   id: number;
   title: string;
 };
 
-export default async function HomePage({
-  params,
-}: {
-  params: { lang: Locale };
+export function generateStaticParams() {
+  return i18n.locales.map((lang) => ({ lang }));
+}
+
+export default async function HomePage(props: {
+  params: Promise<{ lang: Locale }>;
 }) {
-  const { lang } = params;
+  const { lang } = await props.params;
+
   const dictionary = await getDictionary(lang);
 
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
@@ -27,7 +31,9 @@ export default async function HomePage({
           <li key={post.id} style={{ marginBottom: "1rem" }}>
             <strong>{post.title}</strong>
             <br />
-            <a href={`/${lang}/posts/${post.id}`}>{dictionary.posts.view}</a>
+            <Link href={`/${lang}/posts/${post.id}`}>
+              {dictionary.posts.view}
+            </Link>
           </li>
         ))}
       </ul>
