@@ -1,5 +1,5 @@
 import { getDictionary } from "../../get-dictionary";
-import { i18n, Locale } from "../../i18n-config";
+import { Locale } from "../../i18n-config";
 import Link from "next/link";
 
 export default async function NotFound({ lang }: { lang: Locale }) {

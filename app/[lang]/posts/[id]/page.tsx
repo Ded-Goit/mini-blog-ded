@@ -1,5 +1,6 @@
 import { getDictionary } from "../../../../get-dictionary";
 import { Locale } from "../../../../i18n-config";
+import { notFound } from "next/navigation";
 
 type Post = {
   id: number;
@@ -10,6 +11,9 @@ type Post = {
 export async function generateStaticParams() {
   // Статично будуємо сторінки для кожної мови і 10 постів
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  if (!res.ok) {
+    notFound();
+  }
   const posts: Post[] = await res.json();
 
   const params = [];
