@@ -1,11 +1,4 @@
 {
-  "server-component": {
-    "welcome": "Vítejte"
-  },
-  "counter": {
-    "increment": "Přidat",
-    "decrement": "Ubrat"
-  },
   "navigation": {
     "home": "Головна",
     "about": "Про нас"
@@ -21,5 +14,13 @@
     "authorIntro": "Розробник:",
     "clientTitle": "Замовник",
     "clientDescription": "Цей проєкт створено як додаткове завдання навчального курсу від"
+  },
+  "pagination": {
+    "prev": "Назад",
+    "next": "Вперед"
+  },
+  "localeSwitcher": "Перемикач мови:",
+  "footer": {
+    "credit": "креативна студія DED production"
   }
 }

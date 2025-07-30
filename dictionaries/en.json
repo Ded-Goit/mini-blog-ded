@@ -1,11 +1,4 @@
 {
-  "server-component": {
-    "welcome": "Welcome"
-  },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
-  },
   "navigation": {
     "home": "Home",
     "about": "About"
@@ -21,5 +14,13 @@
     "authorIntro": "Developed by",
     "clientTitle": "Client",
     "clientDescription": "This project was created as an additional assignment for the training course from"
+  },
+  "pagination": {
+    "prev": "Prev",
+    "next": "Next"
+  },
+  "localeSwitcher": "Locale switcher:",
+  "footer": {
+    "credit": "creative studio DED production"
   }
 }

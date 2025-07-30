@@ -13,7 +13,7 @@ export default async function Header({ lang }: { lang: Locale }) {
       <nav className={styles.nav}>
         <Link href={`/${lang}`}>{dict.navigation.home}</Link>
         <Link href={`/${lang}/about`}>{dict.navigation.about}</Link>
-        <LocaleSwitcher />
+        <LocaleSwitcher lang={lang} label={dict.localeSwitcher} />
       </nav>
     </header>
   );

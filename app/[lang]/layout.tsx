@@ -20,7 +20,7 @@ export default async function Root(props: {
       <body>
         <Header lang={lang} />
         <main>{props.children}</main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );
