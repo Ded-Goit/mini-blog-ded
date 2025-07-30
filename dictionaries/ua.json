@@ -22,5 +22,10 @@
   "localeSwitcher": "Перемикач мови:",
   "footer": {
     "credit": "креативна студія DED production"
+  },
+  "notFound": {
+    "title": "Сторінку не знайдено",
+    "description": "Вибачте, сторінка, яку ви шукаєте, не існує.",
+    "backToHome": "Повернутися на головну"
   }
 }

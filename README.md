@@ -52,6 +52,16 @@ This mini-blog was created as part of a GoIT educational program.
 
 ---
 
+## 🗣 Switching Languages
+
+The site supports both Ukrainian (ua) and English (en) via URL prefixes:
+
+/en → English
+
+/ua → Українська
+
+Use the language switcher in the header to change language on any page.
+
 ## 🚀 How to Run Locally
 
 ```bash
@@ -64,20 +74,14 @@ npm install
 
 # Run locally
 npm run dev
-📦 Build for Production
-bash
 
-npm run build
-npm start
-🗣 Switching Languages
-The site supports both Ukrainian (ua) and English (en) via URL prefixes:
+```
 
-/en → English
+## 📃 License
 
-/ua → Українська
-
-Use the language switcher in the header to change language on any page.
-
-📃 License
 This project is open-sourced for educational purposes.
+
+```
+
+
 ```
