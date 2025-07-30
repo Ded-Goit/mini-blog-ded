@@ -7,7 +7,6 @@
 ./app/[lang]/about
 ./app/[lang]/about/page.tsx
 ./app/[lang]/components
-./app/[lang]/components/counter.tsx
 ./app/[lang]/components/Footer
 ./app/[lang]/components/Footer/Footer.module.css
 ./app/[lang]/components/Footer/Footer.tsx
@@ -15,6 +14,7 @@
 ./app/[lang]/components/Header/Header.module.css
 ./app/[lang]/components/Header/Header.tsx
 ./app/[lang]/components/locale-switcher.tsx
+./app/[lang]/components/Pagination
 ./app/[lang]/globals.css
 ./app/[lang]/layout.tsx
 ./app/[lang]/page.tsx
@@ -22,7 +22,6 @@
 ./app/[lang]/posts/[id]
 ./app/[lang]/posts/[id]/page.tsx
 ./dictionaries
-./dictionaries/de.json
 ./dictionaries/en.json
 ./dictionaries/ua.json
 ./get-dictionary.ts
@@ -36,3 +35,5 @@
 ./public/favicon.ico
 ./README.md
 ./tsconfig.json
+./types
+./types/post.ts

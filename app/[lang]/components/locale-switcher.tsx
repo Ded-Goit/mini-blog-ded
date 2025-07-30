@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n, type Locale } from "../../../i18n-config";
+import styles from "./LocaleSwitcher.module.css";
 
 export default function LocaleSwitcher({
   lang,
@@ -21,16 +22,21 @@ export default function LocaleSwitcher({
   };
 
   return (
-    <div>
-      <p>{label}</p>
-      <ul>
-        {i18n.locales.map((locale) => {
-          return (
-            <li key={locale}>
-              <Link href={redirectedPathname(locale)}>{locale}</Link>
-            </li>
-          );
-        })}
+    <div className={styles.switcher}>
+      {label && <span className={styles.label}>{label}</span>}
+      <ul className={styles.list}>
+        {i18n.locales.map((locale) => (
+          <li key={locale}>
+            <Link
+              className={`${styles.link} ${
+                locale === lang ? styles.active : ""
+              }`}
+              href={redirectedPathname(locale)}
+            >
+              {locale}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

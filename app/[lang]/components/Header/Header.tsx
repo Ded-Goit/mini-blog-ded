@@ -11,9 +11,11 @@ export default async function Header({ lang }: { lang: Locale }) {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href={`/${lang}`}>{dict.navigation.home}</Link>
-        <Link href={`/${lang}/about`}>{dict.navigation.about}</Link>
-        <LocaleSwitcher lang={lang} label={dict.localeSwitcher} />
+        <div className={styles.links}>
+          <Link href={`/${lang}`}>{dict.navigation.home}</Link>
+          <Link href={`/${lang}/about`}>{dict.navigation.about}</Link>
+        </div>
+        <LocaleSwitcher lang={lang} label="" />
       </nav>
     </header>
   );

@@ -1,0 +1,30 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin: 0; /* remove top margin */
+}
+
+.label {
+  font-weight: bold;
+  margin: 0; /* no vertical margin */
+}
+
+.list {
+  display: flex;
+  gap: var(--spacing-sm);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: var(--color-accent);
+  font-weight: normal;
+}
+
+.active {
+  color: var(--color-accent);
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-accent);
+}

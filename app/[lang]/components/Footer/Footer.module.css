@@ -1,7 +1,22 @@
 .footer {
-  padding: 1rem;
-  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background-color: var(--color-bg);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
-  background-color: #f1f1f1;
-  font-size: 0.9rem;
+  padding: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.link {
+  color: var(--color-accent);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
