@@ -2,6 +2,7 @@
 import { getDictionary } from "../../get-dictionary";
 import { i18n, Locale } from "../../i18n-config";
 import Link from "next/link";
+import PostList from "./components/PostList";
 
 type Post = {
   id: number;
@@ -26,17 +27,7 @@ export default async function HomePage(props: {
     <div>
       <h1>{dictionary.posts.title}</h1>
 
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id} style={{ marginBottom: "1rem" }}>
-            <strong>{post.title}</strong>
-            <br />
-            <Link href={`/${lang}/posts/${post.id}`}>
-              {dictionary.posts.view}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <PostList posts={posts} lang={lang} dictionary={dictionary.posts} />
     </div>
   );
 }

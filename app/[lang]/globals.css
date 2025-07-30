@@ -120,3 +120,7 @@ p {
 .btn:hover {
   background-color: #0059c1;
 }
+.read {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
